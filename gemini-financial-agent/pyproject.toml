@@ -1,0 +1,19 @@
+[project]
+name = "gemini-financial-agent"
+version = "0.1.0"
+description = "Provider-agnostic financial agent: Gemini API + Claude API with the same interface. Demonstrates multi-provider LLM architecture."
+requires-python = ">=3.11"
+dependencies = [
+    "google-generativeai>=0.8",
+    "anthropic>=0.40",
+    "python-dotenv>=1.0",
+    "streamlit>=1.40",
+    "pandas>=2.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
